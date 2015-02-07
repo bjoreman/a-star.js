@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pathfinding</title>
+	<script type="text/javascript" src="astar.js"></script>
+	<script type="text/javascript" src="pathfinding.js"></script>
+</head>
+<body>
+<div>
+	Edit: <input type="radio" id="wallMode" checked name="editMode"> Wall
+	<input type="radio" id="startMode" name="editMode"> Start
+	<input type="radio" id="endMode" name="editMode"> End
+	<input type="button" id="clearButton" value="Clear"><br>
+	Width: <input type="text" id="width" value="5">
+	Height: <input type="text" id="height" value="5">
+	<input type="button" id="sizeButton" value="Update">
+	<br><input type="checkbox" id="drawHeatMap"> Draw heat map <input type="button" id="runButton" value="Run"><br>
+	<canvas id="mapCanvas" style="width: 300px; height: 300px; border: 1px solid black">
+</div>
+<div>
+	<b>Ideas</b>
+	<ul>
+		<li>If end is inaccessible, find nearest target.</li>
+		<li>Better touch drawing</li>
+		<li>Do not alter walls if drag-drawing start and end points</li>
+		<li>Generate random maps</li>
+		<li>Separate and abstract map API</li>
+	</ul>
+</div>
+</body>
+</html>
